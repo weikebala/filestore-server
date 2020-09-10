@@ -2,7 +2,7 @@ version: '2'
 
 services:
   proxy:
-    image: traefik:v2.0
+    image: traefik:v1.7
     command: --api --docker --docker.domain=docker.localhost --logLevel=DEBUG
     networks:
       - apinetwork
