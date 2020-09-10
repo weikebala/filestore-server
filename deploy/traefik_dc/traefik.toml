@@ -1,5 +1,10 @@
-defaultEntryPoints = ["http"]
-insecureSkipVerify = true
-[entryPoints]
-  [entryPoints.http]
-  address = ":80"
+## traefik.yml
+
+# Docker configuration backend
+providers:
+  docker:
+    defaultRule: "Host(`{{ trimPrefix `/` .Name }}.fileserver.com`)"
+
+# API and dashboard configuration
+api:
+  insecure: true
