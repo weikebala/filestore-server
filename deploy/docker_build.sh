@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #ROOT_DIR=$GOPATH/filestore-server
-ROOT_DIR=F:\filestore-server
+ROOT_DIR=/project/go/filestore-server
 #ROOT_DIR=/data/imooc/src/filestore-server
 services="
 dbproxy
