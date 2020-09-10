@@ -1,0 +1,54 @@
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /static/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /static/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /user/signup              --> filestore-server/service/apigw/handler.SignupHandler (3 handlers)
+[GIN-debug] POST   /user/signup              --> filestore-server/service/apigw/handler.DoSignupHandler (3 handlers)
+[GIN-debug] GET    /user/signin              --> filestore-server/service/apigw/handler.SigninHandler (3 handlers)
+[GIN-debug] POST   /user/signin              --> filestore-server/service/apigw/handler.DoSigninHandler (3 handlers)
+[GIN-debug] POST   /user/info                --> filestore-server/service/apigw/handler.UserInfoHandler (4 handlers)
+[GIN-debug] POST   /file/query               --> filestore-server/service/apigw/handler.FileQueryHandler (4 handlers)
+[GIN-debug] POST   /file/update              --> filestore-server/service/apigw/handler.FileMetaUpdateHandler (4 handlers)
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN] 2020/09/09 - 18:04:17 | 304 |       1.002ms |       127.0.0.1 | GET      "/static/view/home.html"
+[GIN] 2020/09/09 - 18:04:18 | 200 |       999.2µs |       127.0.0.1 | GET      "/favicon.ico"
+[GIN] 2020/09/09 - 18:04:18 | 200 |     40.9731ms |       127.0.0.1 | POST     "/user/info?username=kezunhao&token=665e2cbefdfe8e14154a9ea185c7185f5f58a673"
+[GIN] 2020/09/09 - 18:04:18 | 200 |     13.9908ms |       127.0.0.1 | POST     "/file/query?username=kezunhao&token=665e2cbefdfe8e14154a9ea185c7185f5f58a673"
+[GIN] 2020/09/09 - 18:07:44 | 404 |            0s |       127.0.0.1 | GET      "/static/js/polyfill.min.js.map"
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /static/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /static/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /user/signup              --> filestore-server/service/apigw/handler.SignupHandler (3 handlers)
+[GIN-debug] POST   /user/signup              --> filestore-server/service/apigw/handler.DoSignupHandler (3 handlers)
+[GIN-debug] GET    /user/signin              --> filestore-server/service/apigw/handler.SigninHandler (3 handlers)
+[GIN-debug] POST   /user/signin              --> filestore-server/service/apigw/handler.DoSigninHandler (3 handlers)
+[GIN-debug] POST   /user/info                --> filestore-server/service/apigw/handler.UserInfoHandler (4 handlers)
+[GIN-debug] POST   /file/query               --> filestore-server/service/apigw/handler.FileQueryHandler (4 handlers)
+[GIN-debug] POST   /file/update              --> filestore-server/service/apigw/handler.FileMetaUpdateHandler (4 handlers)
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN] 2020/09/10 - 15:15:19 | 302 |       997.1µs |       127.0.0.1 | GET      "/user/signin"
+[GIN] 2020/09/10 - 15:15:19 | 304 |     74.9528ms |       127.0.0.1 | GET      "/static/view/signin.html"
+[GIN] 2020/09/10 - 15:15:19 | 200 |            0s |       127.0.0.1 | GET      "/favicon.ico"
+2020-09-10 15:15:22.512844 I | 
+2020-09-10 15:15:22.516844 I | 
+[GIN] 2020/09/10 - 15:15:22 | 200 |    140.9118ms |       127.0.0.1 | POST     "/user/signin"
+[GIN] 2020/09/10 - 15:15:22 | 304 |       996.1µs |       127.0.0.1 | GET      "/static/view/home.html"
+[GIN] 2020/09/10 - 15:15:22 | 304 |      1.0044ms |       127.0.0.1 | GET      "/static/img/avatar.jpeg"
+[GIN] 2020/09/10 - 15:15:22 | 304 |     87.9476ms |       127.0.0.1 | GET      "/static/js/auth.js"
+[GIN] 2020/09/10 - 15:15:22 | 200 |            0s |       127.0.0.1 | GET      "/favicon.ico"
+[GIN] 2020/09/10 - 15:15:22 | 200 |     16.9903ms |       127.0.0.1 | POST     "/user/info?username=kezunhao&token=34d32ba9108aeda6d7055bc35857ee905f59d28a"
+[GIN] 2020/09/10 - 15:15:22 | 200 |     73.9547ms |       127.0.0.1 | POST     "/file/query?username=kezunhao&token=34d32ba9108aeda6d7055bc35857ee905f59d28a"
+[GIN] 2020/09/10 - 15:19:25 | 404 |            0s |       127.0.0.1 | GET      "/static/view/[object Object]"
+[GIN] 2020/09/10 - 15:24:02 | 304 |       999.7µs |       127.0.0.1 | GET      "/static/view/home.html"
+[GIN] 2020/09/10 - 15:24:03 | 200 |            0s |       127.0.0.1 | GET      "/favicon.ico"
+[GIN] 2020/09/10 - 15:24:03 | 200 |     42.9761ms |       127.0.0.1 | POST     "/user/info?username=kezunhao&token=34d32ba9108aeda6d7055bc35857ee905f59d28a"
+[GIN] 2020/09/10 - 15:24:03 | 200 |      9.9933ms |       127.0.0.1 | POST     "/file/query?username=kezunhao&token=34d32ba9108aeda6d7055bc35857ee905f59d28a"

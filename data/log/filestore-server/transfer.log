@@ -1,0 +1,10 @@
+2020-09-09 18:02:52.319492 I | 异步转移文件功能目前被禁用，请检查相关配置
+2020-09-09 18:02:52.322490 I | custom mq address: 127.0.0.1
+2020-09-09 18:02:52.332484 I | Transport [http] Listening on [::]:63575
+2020-09-09 18:02:52.332484 I | Broker [http] Connected to [::]:63576
+2020-09-09 18:02:52.500380 I | Registry [etcd] Registering node: go.micro.service.transfer-2e6195c7-47b8-489a-930d-3d38d9c0bdc8
+2020-09-10 15:14:25.360455 I | 异步转移文件功能目前被禁用，请检查相关配置
+2020-09-10 15:14:25.361456 I | custom mq address: 127.0.0.1
+2020-09-10 15:14:25.368446 I | Transport [http] Listening on [::]:52055
+2020-09-10 15:14:25.369446 I | Broker [http] Connected to [::]:52056
+2020-09-10 15:14:25.542337 I | Registry [etcd] Registering node: go.micro.service.transfer-d37ee9e2-181a-47ff-8bbf-432bd0b876c7

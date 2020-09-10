@@ -1,0 +1,9 @@
+2020-09-09 18:02:40.956539 I | custom db address: 127.0.0.1
+2020-09-09 18:02:40.964537 I | Transport [http] Listening on [::]:63550
+2020-09-09 18:02:40.964537 I | Broker [http] Connected to [::]:63551
+2020-09-09 18:02:41.149420 I | Registry [etcd] Registering node: go.micro.service.dbproxy-72a174ca-c881-4e87-83e9-add4205cb97a
+2020-09-10 15:14:15.998262 I | custom db address: 127.0.0.1
+2020-09-10 15:14:16.006257 I | Transport [http] Listening on [::]:52037
+2020-09-10 15:14:16.006257 I | Broker [http] Connected to [::]:52038
+2020-09-10 15:14:16.141175 I | Registry [etcd] Registering node: go.micro.service.dbproxy-6b817666-7dfc-48e8-b0da-dc14c729456d
+[mysql] 2020/09/10 15:24:03 connection.go:158: bad connection

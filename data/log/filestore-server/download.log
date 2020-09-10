@@ -1,0 +1,33 @@
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /static/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /static/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /file/download            --> filestore-server/service/download/api.DownloadHandler (4 handlers)
+[GIN-debug] POST   /file/downloadurl         --> filestore-server/service/download/api.DownloadURLHandler (4 handlers)
+[GIN-debug] Listening and serving HTTP on 0.0.0.0:38080
+2020-09-09 18:02:48.664758 I | Transport [http] Listening on [::]:63567
+2020-09-09 18:02:48.664758 I | Broker [http] Connected to [::]:63568
+2020-09-09 18:02:48.817665 I | Registry [etcd] Registering node: go.micro.service.download-a0194fd4-99d0-4a73-bae1-95cd75722c24
+[GIN] 2020/09/09 - 18:05:57 | 200 |       9.992ms |             ::1 | POST     "/file/downloadurl?filehash=2ee6ca9799b5d00ab52dec0bfd678d9dc7de5246&username=kezunhao&token=665e2cbefdfe8e14154a9ea185c7185f5f58a673"
+[GIN] 2020/09/09 - 18:07:44 | 204 |            0s |             ::1 | OPTIONS  "/file/download?filehash=2ee6ca9799b5d00ab52dec0bfd678d9dc7de5246&username=kezunhao&token=665e2cbefdfe8e14154a9ea185c7185f5f58a673"
+[GIN] 2020/09/09 - 18:07:44 | 200 |     11.9943ms |             ::1 | GET      "/file/download?filehash=2ee6ca9799b5d00ab52dec0bfd678d9dc7de5246&username=kezunhao&token=665e2cbefdfe8e14154a9ea185c7185f5f58a673"
+[GIN] 2020/09/09 - 18:14:50 | 200 |      9.9955ms |             ::1 | POST     "/file/downloadurl?filehash=2ee6ca9799b5d00ab52dec0bfd678d9dc7de5246&username=kezunhao&token=665e2cbefdfe8e14154a9ea185c7185f5f58a673"
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /static/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /static/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /file/download            --> filestore-server/service/download/api.DownloadHandler (4 handlers)
+[GIN-debug] POST   /file/downloadurl         --> filestore-server/service/download/api.DownloadURLHandler (4 handlers)
+[GIN-debug] Listening and serving HTTP on 0.0.0.0:38080
+2020-09-10 15:14:21.207029 I | Transport [http] Listening on [::]:52050
+2020-09-10 15:14:21.207029 I | Broker [http] Connected to [::]:52051
+[GIN-debug] [ERROR] listen tcp 0.0.0.0:38080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2020-09-10 15:14:21.343946 I | Registry [etcd] Registering node: go.micro.service.download-bdf25c18-0139-4f60-8a3d-bdbd59457b8e

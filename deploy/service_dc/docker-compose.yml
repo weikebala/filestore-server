@@ -1,0 +1,22 @@
+version: '2'
+
+services:
+# apigw service
+  apigw:
+    image: hub.fileserver.com/filestore/apigw
+    networks:
+      - web
+    env_file:
+      - ./.env
+    environment:
+      - PARAMS=${registryAddr} ${redisAddr} ${mysqlAddr} ${mqAddr}
+    labels:
+      - "traefik.backend=apigw"
+      - "traefik.frontend.rule=Host:apigw.fileserver.com"
+      - "traefik.docker.port=8080"
+# account service
+
+networks:
+  web:
+    external:
+      name: fileserver

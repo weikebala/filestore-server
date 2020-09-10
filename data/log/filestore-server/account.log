@@ -1,0 +1,6 @@
+2020-09-09 18:02:54.883902 I | Transport [http] Listening on [::]:63580
+2020-09-09 18:02:54.883902 I | Broker [http] Connected to [::]:63581
+2020-09-09 18:02:55.075783 I | Registry [etcd] Registering node: go.micro.service.user-c65f01ab-36f4-4ae7-b32a-b75810b85da4
+2020-09-10 15:14:27.926860 I | Transport [http] Listening on [::]:52062
+2020-09-10 15:14:27.927857 I | Broker [http] Connected to [::]:52063
+2020-09-10 15:14:28.065773 I | Registry [etcd] Registering node: go.micro.service.user-1c7acfdc-1e91-41d0-bfec-2968accd56a7
