@@ -76,6 +76,15 @@ services:
       - ./.env
     environment:
       - PARAMS=${registryAddr} ${redisAddr} ${mysqlAddr} ${mqAddr}
+  # weikebala service
+  weikebala:
+    image: hub.fileserver.com/filestore/weikebala
+    networks:
+      - web
+    env_file:
+      - ./.env
+    environment:
+      - PARAMS=${registryAddr} ${redisAddr} ${mysqlAddr} ${mqAddr}
 networks:
   web:
     external:

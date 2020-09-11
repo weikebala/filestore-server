@@ -10,6 +10,7 @@ download
 transfer
 account
 apigw
+weikebala
 "
 
 # 编译service可执行文件

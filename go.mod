@@ -22,5 +22,6 @@ require (
 	github.com/moxiaomomo/go-bindata-assetfs v1.0.0
 	github.com/streadway/amqp v1.0.0
 	golang.org/x/time v0.0.0-20200630173020-3af7569d3a1e // indirect
+	google.golang.org/protobuf v1.23.0
 	gopkg.in/amz.v1 v1.0.0-20150111123259-ad23e96a31d2
 )
