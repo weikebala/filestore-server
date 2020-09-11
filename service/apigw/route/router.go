@@ -3,6 +3,7 @@ package route
 import (
 	"filestore-server/assets"
 	"filestore-server/service/apigw/handler"
+	"github.com/gin-gonic/contrib/static"
 	"net/http"
 	"strings"
 
@@ -48,7 +49,8 @@ func Router() *gin.Engine {
 
 	//	router.Static("/static/", "./static")
 	// 将静态文件打包到bin文件
-	router.Static("/static/", "./static")
+	//router.Static("/static/", "./static")
+	router.Use(static.Serve("/static/", BinaryFileSystem("static")))
 
 	// 注册
 	router.GET("/user/signup", handler.SignupHandler)
