@@ -19,13 +19,15 @@ import (
 	userProto "filestore-server/service/account/proto"
 	dlProto "filestore-server/service/download/proto"
 	upProto "filestore-server/service/upload/proto"
+	weikebalaProto "filestore-server/service/weikebala/proto"
 	"filestore-server/util"
 )
 
 var (
-	userCli userProto.UserService
-	upCli   upProto.UploadService
-	dlCli   dlProto.DownloadService
+	userCli      userProto.UserService
+	upCli        upProto.UploadService
+	dlCli        dlProto.DownloadService
+	weikebalaCli weikebalaProto.WaiterService
 )
 
 func init() {
@@ -55,6 +57,7 @@ func init() {
 	upCli = upProto.NewUploadService("go.micro.service.upload", cli)
 	// 初始化一个download服务的客户端
 	dlCli = dlProto.NewDownloadService("go.micro.service.download", cli)
+	weikebalaCli = weikebalaProto.NewWaiterService("go.micro.service.weikebala", cli)
 }
 
 // SignupHandler : 响应注册页面
@@ -177,4 +180,21 @@ func UserInfoHandler(c *gin.Context) {
 		},
 	}
 	c.Data(http.StatusOK, "application/json", cliResp.JSONBytes())
+}
+
+func WeikebalaHandler(c *gin.Context) {
+	resp, err := weikebalaCli.DoMD5(context.TODO(), &weikebalaProto.Req{
+		JsonStr: "weikebala",
+	})
+
+	if err != nil {
+		log.Println(err.Error())
+		c.Status(http.StatusInternalServerError)
+		return
+	}
+
+	c.JSON(http.StatusOK, gin.H{
+		"code": http.StatusAccepted,
+		"msg":  resp.BackJson,
+	})
 }

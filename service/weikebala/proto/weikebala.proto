@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package go.micro.service.waiter;
+
+service WaiterService {
+    // 获取上传入口地址
+    rpc DoMD5 (Req) returns (Res) {}
+}
+
+message Req {
+  // 类型 字段 = 标识号
+  string jsonStr = 1;
+}
+
+message Res {
+  string backJson = 1;
+}

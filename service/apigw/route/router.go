@@ -54,6 +54,7 @@ func Router() *gin.Engine {
 
 	// 注册
 	router.GET("/user/signup", handler.SignupHandler)
+	router.GET("/wiekebala/test", handler.WeikebalaHandler)
 	router.POST("/user/signup", handler.DoSignupHandler)
 	// 登录
 	router.GET("/user/signin", handler.SigninHandler)
